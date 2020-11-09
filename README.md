@@ -1,8 +1,8 @@
 # Generate Password
 
-<p aling="center">
-    <img src="./img/demo.gif">
-<p>
+<p align="center">
+   <img src="./img/demo.gif">
+</p>
 
 ## User stories
 
