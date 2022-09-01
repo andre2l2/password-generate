@@ -1,17 +1,8 @@
-# Generate Password
-
-<p align="center">
+<div align="center">
    <img src="./img/demo.gif">
-</p>
+   <h1>Generate Password</h1>
+</div>
 
-## User stories
+## Links:
 
-[x] User can select the length of the generated password.
-
-[x] User can select one or multiple of the following: Include uppercase letters, Include lowercase letters, Include numbers, Include symbols.
-
-[x] By clicking the Generate password button, the user can see a password being generated.
-
-[x] User can click a Copy to clipboard button which will save the password to the clipboard.
-
-[x] User can see the password strength
+- [password-generate](https://github.com/andre2l2/password-generate.git)
