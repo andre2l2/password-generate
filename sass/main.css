@@ -7,8 +7,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,68 +17,37 @@ body {
 }
 
 section {
-  width: 100%;
   height: 100%;
   font-family: Helvetica, sans-serif;
 }
-
 section h1 {
-  text-align: center;
-  position: relative;
-  left: 50%;
-  top: 10%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
   font-size: 30px;
+  margin-bottom: 20px;
 }
-
 section main {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 600px;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 section .main-hash {
   height: 60%;
   width: 300px;
   padding: 20px;
   background-color: rebeccapurple;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-
 section .main-hash #generate {
   width: 100%;
   height: 28px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 section .main-hash #generate input {
   height: 100%;
   width: 100%;
@@ -87,7 +55,6 @@ section .main-hash #generate input {
   margin-right: 5px;
   padding-left: 3px;
 }
-
 section .main-hash #generate button {
   height: 100%;
   border: 0;
@@ -96,33 +63,22 @@ section .main-hash #generate button {
   background-color: var(--btn-color);
   color: white;
   cursor: pointer;
-  -webkit-transition: .3s background;
-  transition: .3s background;
+  transition: 0.3s background;
 }
-
 section .main-hash #generate button:hover {
   background-color: var(--btn-color-hover);
 }
-
 section .main-hash #length-password {
   color: whitesmoke;
 }
-
 section .main-hash #length-password input {
   width: 50px;
 }
-
 section .main-hash #checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   color: whitesmoke;
 }
-
 section .main-hash .btn-generate {
   width: 90%;
   height: 10%;
@@ -132,11 +88,8 @@ section .main-hash .btn-generate {
   border-radius: 2px;
   background-color: var(--btn-color);
   cursor: pointer;
-  -webkit-transition: .3s background;
-  transition: .3s background;
+  transition: 0.3s background;
 }
-
 section .main-hash .btn-generate:hover {
   background-color: var(--btn-color-hover);
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
