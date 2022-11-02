@@ -10,7 +10,7 @@
   <body>
     <section>
       <main>
-        <h1>Generete your pass</h1>
+        <h1>Generete Your Password</h1>
 
         <div class="main-hash">
           <div id="generate">
@@ -45,8 +45,14 @@
           <button class="btn-generate">GENEREATE</button>
         </div>
       </main>
+
+      <div id="version"></div>
     </section>
 
     <script src="./javascript/script.js" type="module"></script>
+    <script type="module">
+      import json from '../package.json' assert { type: 'json' };
+      document.querySelector('#version').innerHTML = 'v' + json.version + '<br>' + 'By Andre Ferreira';
+    </script>
   </body>
 </html>
