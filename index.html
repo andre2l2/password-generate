@@ -51,8 +51,12 @@
 
     <script src="./javascript/script.js" type="module"></script>
     <script type="module">
-      import json from '../package.json' assert { type: 'json' };
-      document.querySelector('#version').innerHTML = 'v' + json.version + '<br>' + 'By Andre Ferreira';
+      const url = 'https://raw.githubusercontent.com/andre2l2/password-generate/main/package.json';
+      fetch(url)
+        .then((response) => response.json())
+        .then((json) => {
+          document.querySelector('#version').innerHTML = 'v' + json.version + '<br>' + 'By Andre Ferreira';
+        });
     </script>
   </body>
 </html>
