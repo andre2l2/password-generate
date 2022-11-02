@@ -12,7 +12,7 @@ export function generateHash(caracters, { lenght = 0, boxes = [false, false, fal
       password += caracters.uppercase[caracter];
     }
 
-    if (boxes[2] && c < lenght) {
+    if (boxes[1] && c < lenght) {
       c++;
 
       const length = caracters.lowercase.length;
@@ -21,7 +21,7 @@ export function generateHash(caracters, { lenght = 0, boxes = [false, false, fal
       password += caracters.lowercase[caracter];
     }
 
-    if (boxes[3] && c < lenght) {
+    if (boxes[2] && c < lenght) {
       c++;
 
       const length = caracters.numbers.length;
@@ -30,7 +30,7 @@ export function generateHash(caracters, { lenght = 0, boxes = [false, false, fal
       password += caracters.numbers[caracter];
     }
 
-    if (boxes[4] && c < lenght) {
+    if (boxes[3] && c < lenght) {
       c++;
 
       const length = caracters.symbols.length;
