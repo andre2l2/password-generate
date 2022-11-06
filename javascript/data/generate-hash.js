@@ -1,9 +1,11 @@
-export function generateHash(caracters, { lenght = 0, boxes = [false, false, false, false] }) {
+export function generateHash(caracters, { length = 0, boxes = [false, false, false, false] }) {
   let password = '';
 
+  if (boxes.every((box) => box === false)) return 'Select one type below';
+
   let c = 0;
-  while (c < lenght && lenght) {
-    if (boxes[0] && c < lenght) {
+  while (c < length && length) {
+    if (boxes[0] && c < length) {
       c++;
 
       const length = caracters.uppercase.length;
@@ -12,7 +14,7 @@ export function generateHash(caracters, { lenght = 0, boxes = [false, false, fal
       password += caracters.uppercase[caracter];
     }
 
-    if (boxes[1] && c < lenght) {
+    if (boxes[1] && c < length) {
       c++;
 
       const length = caracters.lowercase.length;
@@ -21,7 +23,7 @@ export function generateHash(caracters, { lenght = 0, boxes = [false, false, fal
       password += caracters.lowercase[caracter];
     }
 
-    if (boxes[2] && c < lenght) {
+    if (boxes[2] && c < length) {
       c++;
 
       const length = caracters.numbers.length;
@@ -30,7 +32,7 @@ export function generateHash(caracters, { lenght = 0, boxes = [false, false, fal
       password += caracters.numbers[caracter];
     }
 
-    if (boxes[3] && c < lenght) {
+    if (boxes[3] && c < length) {
       c++;
 
       const length = caracters.symbols.length;

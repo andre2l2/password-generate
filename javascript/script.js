@@ -20,7 +20,7 @@ function checkAllBox() {
 
 function start() {
   const hash = generateHash(listCaracters, {
-    lenght: $lenghtPassword.value,
+    length: $lenghtPassword.value,
     boxes: checkAllBox(),
   });
 

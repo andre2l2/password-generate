@@ -81,7 +81,13 @@ section .main-hash #length-password {
   color: whitesmoke;
 }
 section .main-hash #length-password input {
-  width: 50px;
+  width: 200px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+section .main-hash #length-password input:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 section .main-hash #checkbox {
   display: flex;

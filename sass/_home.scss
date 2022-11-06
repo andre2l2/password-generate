@@ -75,7 +75,12 @@ section {
       color: whitesmoke;
 
       input {
-        width: 50px;
+        width: 200px;
+        cursor: grab;
+      }
+
+      input:active {
+        cursor: grabbing;
       }
     }
 
