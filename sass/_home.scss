@@ -73,6 +73,10 @@ section {
 
     #length-password {
       color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       input {
         width: 200px;

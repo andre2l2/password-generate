@@ -79,6 +79,10 @@ section .main-hash #generate button:hover {
 }
 section .main-hash #length-password {
   color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 section .main-hash #length-password input {
   width: 200px;
