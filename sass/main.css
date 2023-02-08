@@ -14,6 +14,7 @@ body {
   background: var(--background-color);
   width: 100vw;
   height: 100vh;
+  padding: 10px;
 }
 
 section {
@@ -25,7 +26,7 @@ section {
   font-family: Helvetica, sans-serif;
 }
 section h1 {
-  font-size: 30px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 section main {
@@ -86,11 +87,9 @@ section .main-hash #length-password {
 }
 section .main-hash #length-password input {
   width: 200px;
-  cursor: -webkit-grab;
   cursor: grab;
 }
 section .main-hash #length-password input:active {
-  cursor: -webkit-grabbing;
   cursor: grabbing;
 }
 section .main-hash #checkbox {

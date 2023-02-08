@@ -11,6 +11,7 @@ const $buttonCopy = document.querySelector('#generate button');
 $buttonGenerete.addEventListener('click', start);
 $buttonCopy.addEventListener('click', copy);
 $lenghtPassword.addEventListener('mousemove', updateLength);
+$lenghtPassword.addEventListener('touchmove', updateLength);
 
 function copy() {
   document.querySelector('#generate input').select();
@@ -22,7 +23,7 @@ function checkAllBox() {
   return toArray.map((box) => box.checked);
 }
 
-function updateLength(e) {
+function updateLength() {
   $lengthInformation.innerHTML = $lenghtPassword.value;
 }
 

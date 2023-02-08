@@ -1,17 +1,18 @@
 :root {
-    --btn-color: orangered;
-    --btn-color-hover: rgb(207, 55, 0);
-    --background-color: rgb(216, 216, 216);
+  --btn-color: orangered;
+  --btn-color-hover: rgb(207, 55, 0);
+  --background-color: rgb(216, 216, 216);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: var(--background-color);
-    width: 100vw;
-    height: 100vh;
+  background: var(--background-color);
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
 }
