@@ -8,14 +8,15 @@ const $lengthInformation = document.querySelector('#length-password .length');
 const $buttonGenerete = document.querySelector('.btn-generate');
 const $buttonCopy = document.querySelector('#generate button');
 
-$buttonGenerete.addEventListener('click', start);
+$buttonGenerete.addEventListener('click', generatePassword);
 $buttonCopy.addEventListener('click', copy);
 $lenghtPassword.addEventListener('mousemove', updateLength);
 $lenghtPassword.addEventListener('touchmove', updateLength);
 
 function copy() {
-  document.querySelector('#generate input').select();
-  document.execCommand('copy');
+  $generate.select();
+  navigator.clipboard.writeText($generate.value);
+  $generate.blur();
 }
 
 function checkAllBox() {
@@ -27,7 +28,7 @@ function updateLength() {
   $lengthInformation.innerHTML = $lenghtPassword.value;
 }
 
-function start() {
+function generatePassword() {
   const hash = generateHash(listCaracters, {
     length: $lenghtPassword.value,
     boxes: checkAllBox(),
